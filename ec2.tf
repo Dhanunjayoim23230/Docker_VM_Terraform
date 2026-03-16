@@ -1,7 +1,7 @@
 resource "aws_instance" "ec2" {
   ami                    = "ami-0220d79f3f480ecf5"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  instance_type          = "t3.micro"
+  instance_type          = "t3.large"
 
 user_data = file("docker.sh")
 
