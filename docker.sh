@@ -29,3 +29,5 @@ usermod -aG docker ec2-user
 # sudo growpart /dev/nvme0n1 4
 # df -Th
 # sudo resize2fs /dev/nvme0n1p4
+
+#kubectl install
