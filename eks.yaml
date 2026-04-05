@@ -1,4 +1,4 @@
-apiVersion: V1
+apiVersion: eksctl.io/v1alpha5
 kind: CluserConfig
 metadata: 
   name: expense
