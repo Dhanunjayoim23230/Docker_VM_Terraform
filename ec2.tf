@@ -14,6 +14,7 @@ resource "aws_instance" "ec2" {
 
 }
 
+
 resource "aws_security_group" "allow_tls" {
   name        = "Security_group"
   description = " it allows all the traffic in and all teh traffic out"
