@@ -35,7 +35,12 @@ sudo install -m 0755 /tmp/eksctl /usr/local/bin && rm /tmp/eksctl
 #sudo mv /tmp/eksctl /usr/local/bin
 #eksctl version
 
+eksctl version
+kubectl version
 
+#kubens install
+git clone https://github.com/ahmetb/kubectx /opt/kubectx
+ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
 # sudo growpart /dev/nvme0n1 4
 # sudo xfs_growfs -d /
