@@ -6,10 +6,11 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "vrushali-tf-state-file"
-    key            = "DocketFiles"
+    bucket         = "vrushali-tf-state"
+    key            = "DockerFiles"
     region         = "us-east-1"
-    dynamodb_table = "vrusali-state-lock-file"
+    #dynamodb_table = "vrushali-tf-state-file"
+    use_lockfile = true
   }
 }
 
