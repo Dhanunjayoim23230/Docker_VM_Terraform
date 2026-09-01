@@ -18,3 +18,4 @@ cloudWatch:
         enableTypes: ["audit", "authenticator", "controllerManager"]
         # all supported types: "api", "audit", "authenticator", "controllerManager", "scheduler"
         # supported special values: "*" and "all"
+        
