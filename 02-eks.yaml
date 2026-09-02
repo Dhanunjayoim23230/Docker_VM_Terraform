@@ -12,6 +12,7 @@ nodeGroups:
     instanceType: m5.large
     desiredCapacity: 1
 
+
 cloudWatch:
     clusterLogging:
         # enable specific types of cluster control plane logs
