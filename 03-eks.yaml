@@ -13,10 +13,9 @@ managedNodeGroups:
   spot: true
   desiredCapacity: 4
 
-- name: spot_new
+- name: spotNew
   instanceType: ["c3.large","c4.large","c5.large","c5d.large","c5n.large","c5a.large","t3.small","t3.large","t3.medium"]  # Your new instance type removed t3.micro
   spot: true
-  desiredCapacity: 2
-  minSize: 1
-  maxSize: 4
+  desiredCapacity: 4
+  
   
