@@ -9,7 +9,7 @@ resource "aws_instance" "ec2" {
   user_data = file("docker.sh")
 
   tags = {
-    Name = "Docker VM"
+    Name = "Control Plane"
   }
 
 
@@ -17,7 +17,7 @@ resource "aws_instance" "ec2" {
 
 
 resource "aws_security_group" "allow_tls" {
-  name        = "Security_group"
+  name        = "SG_CP"
   description = " it allows all the traffic in and all teh traffic out"
 
   ingress {
